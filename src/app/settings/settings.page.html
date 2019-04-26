@@ -1,6 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Settings</ion-title>
+      <ion-buttons slot="secondary">
+        <ion-button href="/home">
+          <ion-icon slot="icon-only" name="md-stats"></ion-icon>
+        </ion-button>
+        <ion-button href="/settings">
+          <ion-icon slot="icon-only" name="ios-cog"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="primary">
+        <ion-button href="/login">
+          <ion-icon slot="icon-only" name="md-log-out"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Settings</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,9 +24,15 @@
 
     <ion-list>
       
-        Would you like to have purchases rounded up to the nearest dollar?
-        <!-- Default Checkbox -->
+        <!--
+        Enable prucahse rounding?
         <ion-checkbox></ion-checkbox>
+        -->
+
+        <ion-item>
+          <ion-label>Enable purcahse rounding?</ion-label>
+          <ion-toggle slot="end"></ion-toggle>
+        </ion-item>
 
         <!--
         Amount you would like to have added onto each debit card purchase.
@@ -42,7 +61,7 @@
 
         <ion-item>
           <ion-label>Bank Routing Number</ion-label>
-          <ion-input placeholder="Enter Input"></ion-input>
+          <ion-input placeholder="Enter Input" ></ion-input>
         </ion-item>
 
         
